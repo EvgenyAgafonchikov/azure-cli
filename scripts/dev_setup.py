@@ -28,6 +28,7 @@ def pip_command(command):
 
 print('Running dev setup...')
 print('Root directory \'{}\'\n'.format(root_dir))
+pip_command('install --upgrade pip')
 
 # install private whls if there are any
 privates_dir = os.path.join(root_dir, 'privates')
